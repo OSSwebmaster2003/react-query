@@ -10,8 +10,8 @@ function RQSuperheroes_page(props) {
     "super-heroes",
     fetchSuperHeroes,
     {
-      refetchOnMount: true,
-      refetchOnWindowFocus: "always",
+      refetchInterval: 2000,
+      refetchIntervalInBackground: true,
     }
   );
 
